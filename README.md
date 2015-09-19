@@ -2,7 +2,7 @@
 
 A simple jQuery plugin for poping imgs in articles without any additional css or image.
 
-There are no settings in this plugin, so that making it much simpler.
+There are no settings in this plugin, so that making it much simpler, just 80 lines code.
 
 ### Usage
 
