@@ -18,4 +18,4 @@ Click any area will close the img show. And you can press the `ESC` key to clear
  
 ### Demo
  
-click here -> <http://rawgit.com/demo-platform/pop-img/master/demo.html> 
+click here -> <http://demo.barretlee.com/pop-img/> 
