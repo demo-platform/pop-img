@@ -18,4 +18,4 @@ Click any area will close the img show. And you can press the `ESC` key to clear
  
 ### Demo
  
-click here -> <http://demo.barretlee.com/pop-img/> 
+click here -> <http://demo-platform.github.io/pop-img/> 
