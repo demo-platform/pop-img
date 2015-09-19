@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>labs | Barret Lee's personal website</title>
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=0">
+  <meta name="email" content="barret.china@gmail.com">
+  <meta name="description" content="barretlee, jQuery Plugin, pop img.">
+</head>
+<body>
+
+<style>
+  html, body {height: 100%;}
+  .container { width: 500px; margin:50px auto;}
+</style>
+<div class="container">
+<h1>jQuery Plugin - Poping Image</h1>
+<p>click the img below. </p>
+<p><img src="http://www.barretlee.com/blogimgs/avatar.png" alt="barretlee" width="100" /></p>
+<p>Yeap, I'm <a href="http://www.barretlee.com">Barret Lee</a>.</p>
+</div>
+<a href="https://github.com/demo-platform/pop-img"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://www.barretlee.com/blogimgs/forkme.png" alt="Fork me on GitHub"></a>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="./index.js"></script>
+<script>$(function(){ $(".container img").popImg(); })</script>
+</body>
+</html>
