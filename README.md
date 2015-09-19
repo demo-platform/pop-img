@@ -12,7 +12,7 @@ $(".container img").popImg();
 
 The effect is poping a half opacity layer fixed full of webpage, then show the target image in it's original size.
 
-Click any area will close the img show.
+Click any area will close the img show. And you can press the `ESC` key to clear screen.
 
 > Attention: I set a very large `z-index` for layer and img.
  
