@@ -4,7 +4,7 @@ A simple jQuery plugin for poping imgs in articles without any additional css or
 
 There are no settings in this plugin, so that making it much simple.
 
-### usage
+### Usage
 
 ```javascript
 $(".container img").popImg();
@@ -16,3 +16,6 @@ Click any area will close the img show.
 
 > Attention: I set a very large `z-index` for layer and img.
  
+### Demo
+ 
+click here -> <http://rawgit.com/demo-platform/pop-img/master/demo.html> 
