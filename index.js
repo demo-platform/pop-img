@@ -67,7 +67,7 @@ $.fn.popImg = function() {
     });
   });
 
-  $(window).on("click keydown", function(evt){
+  $("body").on("click keydown", function(evt){
     if(evt.type == "keydown" && evt.keyCode === 27) {
       $layer.fadeOut(300);
       $("img[data-b-img]").remove();
