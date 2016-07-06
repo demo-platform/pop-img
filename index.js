@@ -35,11 +35,29 @@ $.fn.popImg = function() {
     $c.css("cursor", "zoom-out").attr("data-b-img", 1);
     var img = new Image();
     img.onload = function(){
+      /*
+       * define big image size
+       */
+      //make new size by default
+      var bigImageHeight  = ($(window).height()*.9).toFixed(0);
+      var bigImageWidth   = (this.width*bigImageHeight/this.height).toFixed(0);
+      //if the big image over range of the screen，use width of the original image for new image size setting
+      if(bigImageWidth > $(window).width())
+      {
+        bigImageWidth   = ($(window).width()*.9).toFixed(0);
+        bigImageHeight  = (this.height*bigImageWidth/this.width).toFixed(0);
+      }
+      //if the new image is larger than the original one，let's use the original image size
+      bigImageWidth   = bigImageWidth>this.width?this.width:bigImageWidth;
+      bigImageHeight  = bigImageHeight>this.height?this.height:bigImageHeight;
+      /*
+       * end
+       */
       $c.stop().animate({
-        width: this.width,
-        height: this.height,
-        left: (dW - this.width) / 2,
-        top: (dH - this.height) / 2
+        width: bigImageWidth,
+        height: bigImageHeight,
+        left: (dW - bigImageWidth) / 2,
+        top: (dH - bigImageHeight) / 2
       }, 300);
     };
     img.src = $c.attr("src");
